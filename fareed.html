@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FAREED AI graduation project case study by Joory." />
+  <title>FAREED | JOORY.EXE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="case-body">
+  <div class="cursor-glow"></div>
+  <div class="background-grid"></div>
+  <div class="background-noise"></div>
+  <div class="floating-orb orb-one"></div>
+  <div class="floating-orb orb-two"></div>
+
+  <header class="topbar">
+    <a href="index.html#home" class="brand">JOORY<span>.EXE</span></a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links">
+      <a href="index.html#home">HOME</a>
+      <a href="index.html#missions" class="nav-accent">MISSIONS</a>
+      <a href="index.html#stats">STATS</a>
+      <a href="index.html#dossier">DOSSIER</a>
+      <a href="index.html#comms">OPEN COMMS</a>
+    </nav>
+  </header>
+
+  <main class="case-main section">
+    <article class="case-frame reveal visible">
+      <div class="case-inner">
+        <a class="case-back" href="index.html#missions">← BACK TO MISSIONS</a>
+
+        <div class="case-grid">
+          <section>
+            <p class="case-kicker">MISSION_02 //// FLAGSHIP</p>
+
+            <div class="case-title-row">
+              <div>
+                <h1 class="case-title">FAREED</h1>
+                <p class="case-subtitle">– AI-BASED REDUNDANCY-FREE TITLE SELECTION</p>
+              </div>
+              <span class="case-status">COMPLETE</span>
+            </div>
+
+            <p class="case-summary">
+              FAREED is a team-built AI web platform designed to help students,
+              supervisors, and academic committees identify redundant graduation
+              project titles before approval. It compares newly submitted titles
+              and abstracts with archived projects and returns similarity scores,
+              matched records, and a uniqueness or duplication decision.
+            </p>
+
+            <div class="fareed-summary-accent">
+              The system focuses on semantic similarity rather than exact wording.
+              Its AI module preprocesses text, applies TF-IDF vectorization, and
+              calculates cosine similarity against a structured archive of previous
+              graduation projects.
+            </div>
+
+            <div class="fareed-metric-grid">
+              <div class="fareed-metric"><strong>4</strong><span>SYSTEM LAYERS</span></div>
+              <div class="fareed-metric"><strong>2</strong><span>USER ROLES</span></div>
+              <div class="fareed-metric"><strong>25%</strong><span>DECISION THRESHOLD</span></div>
+              <div class="fareed-metric"><strong>REAL-TIME</strong><span>SIMILARITY CHECK</span></div>
+            </div>
+
+            <div class="fareed-role-note">
+              <strong>Team Project:</strong> FAREED was developed by a six-member
+              graduation-project team. My portfolio presents the system as a
+              collaborative project and focuses on the architecture, AI workflow,
+              interface, testing, documentation, and final presentation produced by
+              the team.
+            </div>
+
+            <div class="case-info-grid">
+              <section class="case-panel">
+                <h2>◉ PROBLEM</h2>
+                <p>
+                  Graduation committees often review large numbers of titles
+                  manually. Similar ideas can be phrased differently, delaying
+                  approval and reducing originality across student projects.
+                </p>
+              </section>
+
+              <section class="case-panel">
+                <h2>▣ SOLUTION</h2>
+                <p>
+                  A web-based verification platform that checks proposed titles
+                  and abstracts against archived projects and returns ranked
+                  semantic matches with a clear decision status.
+                </p>
+              </section>
+
+              <section class="case-panel">
+                <h2>⌁ CORE FEATURES</h2>
+                <ul>
+                  <li>Student and supervisor authentication workflows.</li>
+                  <li>Archived graduation-project browsing.</li>
+                  <li>Title and abstract submission.</li>
+                  <li>Similarity percentage and closest matched project.</li>
+                  <li>Supervisor review, approval, and rejection dashboard.</li>
+                </ul>
+              </section>
+
+              <section class="case-panel">
+                <h2>◌ TECHNOLOGIES</h2>
+                <div class="case-tech">
+                  <span>PYTHON</span><span>NLP</span><span>TF-IDF</span>
+                  <span>COSINE SIMILARITY</span><span>SCIKIT-LEARN</span>
+                  <span>PANDAS</span><span>NUMPY</span><span>MYSQL</span>
+                  <span>PHP</span><span>HTML</span><span>CSS</span>
+                  <span>JAVASCRIPT</span><span>JSON API</span>
+                </div>
+              </section>
+            </div>
+
+            <section id="ai-workflow" class="learning-row">
+              <h2>◇ AI WORKFLOW</h2>
+              <div class="ai-pipeline">
+                <div class="ai-step"><span><b>01</b>User submits title and abstract</span></div>
+                <div class="ai-step"><span><b>02</b>API validates and forwards input</span></div>
+                <div class="ai-step"><span><b>03</b>AI preprocesses and vectorizes text</span></div>
+                <div class="ai-step"><span><b>04</b>Cosine similarity ranks stored matches</span></div>
+                <div class="ai-step"><span><b>05</b>Result and decision are displayed</span></div>
+              </div>
+            </section>
+
+            <section class="similarity-console">
+              <p class="command">&gt; INITIALIZING FAREED_NLP_ENGINE...</p>
+              <p>&gt; loading archived project titles...</p>
+              <p>&gt; preprocessing submitted title and abstract...</p>
+              <p>&gt; generating TF-IDF vectors...</p>
+              <p>&gt; calculating cosine similarity...</p>
+              <p class="duplicate">&gt; example interface result: DUPLICATE // 100%</p>
+              <p class="success">&gt; matched project returned to student dashboard</p>
+            </section>
+
+            <section class="architecture-layers">
+              <article class="architecture-layer">
+                <strong>01 // PRESENTATION LAYER</strong>
+                <p>
+                  Web interfaces for registration, login, project verification,
+                  archived projects, student dashboards, and supervisor review.
+                </p>
+              </article>
+
+              <article class="architecture-layer">
+                <strong>02 // APPLICATION &amp; API LAYER</strong>
+                <p>
+                  Validates requests, coordinates application logic, communicates
+                  with the AI module, and formats results for the interface.
+                </p>
+              </article>
+
+              <article class="architecture-layer">
+                <strong>03 // AI PROCESSING LAYER</strong>
+                <p>
+                  Performs text normalization, TF-IDF vectorization, cosine
+                  similarity computation, ranking, and threshold-based classification.
+                </p>
+              </article>
+
+              <article class="architecture-layer">
+                <strong>04 // DATA LAYER</strong>
+                <p>
+                  Stores historical project titles, abstracts, user information,
+                  validation history, and records used by the comparison engine.
+                </p>
+              </article>
+            </section>
+
+            <section class="learning-row">
+              <h2>◇ WHAT THIS PROJECT DEMONSTRATES</h2>
+              <div class="learning-items">
+                <div class="learning-item"><span><b>AI</b>NLP Application</span></div>
+                <div class="learning-item"><span><b>API</b>System Integration</span></div>
+                <div class="learning-item"><span><b>DB</b>Relational Data</span></div>
+                <div class="learning-item"><span><b>UI</b>Role-Based Interface</span></div>
+                <div class="learning-item"><span><b>TEAM</b>Collaboration</span></div>
+              </div>
+            </section>
+
+            <div class="fareed-doc-links">
+              <a href="documents/fareed-final-report.pdf" target="_blank">FINAL REPORT ↗</a>
+              <a href="documents/fareed-poster.pdf" target="_blank">PROJECT POSTER ↗</a>
+              <a href="source-files/fareed-ai-notebook.ipynb">AI NOTEBOOK ↓</a>
+              <a href="source-files/fareed_db.sql">DATABASE SCHEMA ↓</a>
+              <a href="source-files/check_similarity.php">SIMILARITY ENDPOINT ↓</a>
+              <a href="source-files/prototype-README.md">PROTOTYPE README ↗</a>
+            </div>
+
+            <div class="case-actions">
+              <a class="button primary" href="index.html#comms">REQUEST MORE DETAILS</a>
+              <a class="button ghost" href="index.html#missions">OTHER MISSIONS</a>
+            </div>
+          </section>
+
+          <section class="case-visual">
+            <div class="case-id">
+              <span>CASE ID<br><strong>FAREED_AI_26</strong></span>
+            </div>
+
+            <div class="main-photo-wrap">
+              <img id="main-project-image"
+                   src="images/fareed-verification.jpeg"
+                   alt="FAREED project verification page showing a duplicate result">
+            </div>
+
+            <div class="gallery" aria-label="FAREED interface and architecture gallery">
+              <button class="gallery-button active"
+                      data-image="images/fareed-verification.jpeg"
+                      data-alt="FAREED project verification page showing a duplicate result">
+                <img src="images/fareed-verification.jpeg" alt="">
+                <span>01_AI_VERIFICATION</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/fareed-landing.jpeg"
+                      data-alt="FAREED landing page">
+                <img src="images/fareed-landing.jpeg" alt="">
+                <span>02_LANDING_PAGE</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/fareed-login.jpeg"
+                      data-alt="FAREED student or supervisor login page">
+                <img src="images/fareed-login.jpeg" alt="">
+                <span>03_ROLE_LOGIN</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/fareed-student-dashboard.jpeg"
+                      data-alt="FAREED student dashboard and project archive">
+                <img src="images/fareed-student-dashboard.jpeg" alt="">
+                <span>04_STUDENT_DASHBOARD</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/fareed-supervisor-dashboard.jpeg"
+                      data-alt="FAREED supervisor dashboard">
+                <img src="images/fareed-supervisor-dashboard.jpeg" alt="">
+                <span>05_SUPERVISOR_DASHBOARD</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/fareed-architecture.png"
+                      data-alt="FAREED integrated multi-layer architecture">
+                <img src="images/fareed-architecture.png" alt="">
+                <span>06_SYSTEM_ARCHITECTURE</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/fareed-workflow.png"
+                      data-alt="FAREED end-to-end title verification workflow">
+                <img src="images/fareed-workflow.png" alt="">
+                <span>07_AI_WORKFLOW</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/fareed-poster.png"
+                      data-alt="FAREED graduation project poster">
+                <img src="images/fareed-poster.png" alt="">
+                <span>08_PROJECT_POSTER</span>
+              </button>
+            </div>
+
+            <p class="case-note">STATUS: WORKING PROTOTYPE // TEAM GRADUATION PROJECT</p>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>JOORY.EXE // CASE FILE FAREED_AI_26 // 2026</p>
+    <a href="index.html#missions">RETURN TO MISSIONS ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const mainProjectImage = document.getElementById("main-project-image");
+    const galleryButtons = document.querySelectorAll(".gallery-button");
+
+    galleryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        mainProjectImage.src = button.dataset.image;
+        mainProjectImage.alt = button.dataset.alt;
+
+        galleryButtons.forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>

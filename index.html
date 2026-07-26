@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Joory's game development portfolio." />
+  <title>JOORY.EXE | Gameplay Programmer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="locked">
+  <div class="cursor-glow"></div>
+  <div class="background-grid"></div>
+  <div class="background-noise"></div>
+  <div class="floating-orb orb-one"></div>
+  <div class="floating-orb orb-two"></div>
+  <div class="floating-orb orb-three"></div>
+
+  <section id="boot-screen" class="boot-screen">
+    <div class="boot-scan"></div>
+    <div class="boot-content">
+      <p class="micro-label">SYSTEM // PORTFOLIO INITIALIZATION</p>
+      <h1>JOORY<span>.EXE</span></h1>
+      <p class="boot-role">GAMEPLAY PROGRAMMER</p>
+
+      <div class="boot-terminal">
+        <p><span>&gt;</span> loading player profile...</p>
+        <p><span>&gt;</span> connecting unity modules...</p>
+        <p><span>&gt;</span> internship_mode = active;</p>
+      </div>
+
+      <button id="enter-button" class="enter-button">
+        <span>ENTER PORTFOLIO</span>
+        <small>[ CLICK TO START ]</small>
+      </button>
+    </div>
+  </section>
+
+  <div id="site-shell" class="site-shell hidden">
+    <header class="topbar">
+      <a href="#home" class="brand">JOORY<span>.EXE</span></a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#missions">MISSIONS</a>
+        <a href="#stats">STATS</a>
+        <a href="#dossier">DOSSIER</a>
+        <a href="#comms" class="nav-accent">OPEN COMMS</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-copy reveal">
+          <div class="status-row">
+            <span class="status-dot"></span>
+            <span>PLAYER ONLINE</span>
+            <span>// SAUDI ARABIA</span>
+          </div>
+
+          <p class="micro-label">COMPUTER SCIENCE // GAME DEVELOPMENT</p>
+
+          <h2>
+            I build
+            <span>playable worlds</span>
+            from code.
+          </h2>
+
+          <p class="hero-description">
+            Computer Science graduate focused on Unity, C#, gameplay systems,
+            artificial intelligence, and meaningful interactive experiences.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#missions" class="button primary">SELECT MISSION</a>
+            <a href="#comms" class="button ghost">OPEN COMMS</a>
+          </div>
+
+          <div class="hero-tech">
+            <span>UNITY</span>
+            <span>C#</span>
+            <span>GAME AI</span>
+            <span>OOP</span>
+          </div>
+        </div>
+
+        <div class="profile-window reveal delay-1">
+          <div class="window-header">
+            <span>PLAYER_PROFILE.DAT</span>
+            <div class="window-actions"><i></i><i></i><i></i></div>
+          </div>
+
+          <div class="profile-main">
+            <div class="avatar-frame">
+              <div class="avatar-grid"></div>
+              <div class="avatar-mark">J</div>
+              <span class="avatar-label">ADD PHOTO LATER</span>
+            </div>
+
+            <div class="profile-data">
+              <p><span>NAME</span> Joory</p>
+              <p><span>ROLE</span> Gameplay Programmer</p>
+              <p><span>ENGINE</span> Unity</p>
+              <p><span>LANGUAGE</span> C#</p>
+              <p><span>STATUS</span> Seeking Internship</p>
+            </div>
+          </div>
+
+          <div class="system-bars">
+            <div><span>CREATIVITY</span><b style="--level: 92%"></b></div>
+            <div><span>PROBLEM SOLVING</span><b style="--level: 88%"></b></div>
+            <div><span>TEAMWORK</span><b style="--level: 90%"></b></div>
+          </div>
+
+          <div class="profile-footer">
+            <span>ACCESS LEVEL: INTERN_CANDIDATE</span>
+            <span class="online-text">● ACTIVE</span>
+          </div>
+        </div>
+
+        <a href="#missions" class="scroll-indicator">
+          <span>SCROLL TO CONTINUE</span>
+          <b>↓</b>
+        </a>
+      </section>
+
+      <section id="missions" class="section section-block">
+        <div class="section-title reveal">
+          <p>MISSION LOG // 01</p>
+          <h3>Featured Projects</h3>
+          <span>Completed and active development files.</span>
+        </div>
+
+        <div class="mission-grid">
+          <article class="mission-card mission-featured reveal">
+            <div class="mission-visual visual-one">
+              <div class="scanline"></div>
+              <span class="mission-badge">GLOBAL GAME JAM 2025</span>
+              <div class="visual-code">GGJ_BUILD_01</div>
+            </div>
+            <div class="mission-info">
+              <div class="mission-top"><div><p class="mission-number">MISSION_01</p><h4>Bubble Hunting</h4></div><span class="mission-status complete">COMPLETE</span></div>
+              <p>A 2D adventure game created during Global Game Jam 2025. Our team built the concept, visual assets, and Unity project under a strict jam deadline, continuing through a complete power outage in Abha by charging the laptop from a car battery.</p>
+              <div class="chip-row"><span>UNITY</span><span>2D</span><span>GAME JAM</span><span>TEAMWORK</span></div>
+              <div class="mission-links"><a href="bubble-hunting.html">VIEW CASE FILE ↗</a><a href="bubble-hunting.html#blackout-log">VIEW DEV LOG ↗</a></div>
+            </div>
+          </article>
+
+          <article class="mission-card reveal delay-1">
+            <div class="mission-visual visual-two">
+              <div class="scanline"></div>
+              <span class="mission-badge">FLAGSHIP GRADUATION PROJECT</span>
+              <div class="visual-code">AI_CORE_02</div>
+            </div>
+            <div class="mission-info">
+              <div class="mission-top">
+                <div>
+                  <p class="mission-number">MISSION_02</p>
+                  <h4>FAREED</h4>
+                </div>
+                <span class="mission-status complete">COMPLETE</span>
+              </div>
+              <p>
+                A team-built AI web platform that checks graduation project
+                titles and abstracts for semantic redundancy using TF-IDF,
+                cosine similarity, a project archive, and role-based workflows.
+              </p>
+              <div class="chip-row">
+                <span>PYTHON</span><span>NLP</span><span>TF-IDF</span>
+                <span>COSINE SIMILARITY</span><span>MYSQL</span>
+              </div>
+              <div class="mission-links">
+                <a href="fareed.html">VIEW CASE FILE ↗</a>
+                <a href="fareed.html#ai-workflow">VIEW AI WORKFLOW ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="mission-card reveal">
+            <div class="mission-visual visual-three">
+              <div class="scanline"></div>
+              <span class="mission-badge">GAME CONCEPT CONTEST</span>
+              <div class="visual-code">AWARD_BUILD_03</div>
+            </div>
+            <div class="mission-info">
+              <div class="mission-top">
+                <div>
+                  <p class="mission-number">MISSION_03</p>
+                  <h4>From Zero to Hero</h4>
+                </div>
+                <span class="mission-status complete">3RD PLACE</span>
+              </div>
+              <p>
+                An award-winning Japanese-themed game concept about a female
+                samurai who fights injustice and works to remove the wall
+                separating the wealthy from the poor. The project focused on
+                narrative, character, visual direction, and concept development.
+              </p>
+              <div class="chip-row">
+                <span>GAME DESIGN</span><span>NARRATIVE</span><span>CONCEPT ART</span><span>TEAMWORK</span>
+              </div>
+              <div class="mission-links">
+                <a href="from-zero-to-hero.html">VIEW CASE FILE ↗</a>
+                <a href="from-zero-to-hero.html#award">VIEW AWARD ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="mission-card reveal delay-1">
+            <div class="mission-visual visual-four">
+              <div class="scanline"></div>
+              <span class="mission-badge">IOT SYSTEM</span>
+              <div class="visual-code">SMART_DEVICE_04</div>
+            </div>
+            <div class="mission-info">
+              <div class="mission-top">
+                <div>
+                  <p class="mission-number">MISSION_04</p>
+                  <h4>Smart Pill Bottle</h4>
+                </div>
+                <span class="mission-status complete">COMPLETE</span>
+              </div>
+              <p>
+                Connected medication reminder system using Raspberry Pi,
+                Arduino, and Home Assistant to detect and report missed doses.
+              </p>
+              <div class="chip-row">
+                <span>RASPBERRY PI</span><span>ARDUINO</span><span>IOT</span>
+              </div>
+              <div class="mission-links">
+                <a href="smart-pill.html">VIEW CASE FILE ↗</a>
+                <a href="#comms">REQUEST DETAILS ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="mission-card reveal">
+            <div class="mission-visual visual-five">
+              <div class="scanline"></div>
+              <span class="mission-badge">SOFTWARE QUALITY ASSURANCE</span>
+              <div class="visual-code">QA_SCAN_05</div>
+            </div>
+            <div class="mission-info">
+              <div class="mission-top">
+                <div>
+                  <p class="mission-number">MISSION_05</p>
+                  <h4>MySTC Mobile QA Testing</h4>
+                </div>
+                <span class="mission-status complete">COMPLETE</span>
+              </div>
+              <p>
+                A manual software-testing case study covering 25 MySTC mobile
+                application test cases across iOS and Android. The team documented
+                23 passes, two failed cases, reproducible defects, and release recommendations.
+              </p>
+              <div class="chip-row">
+                <span>MANUAL TESTING</span><span>QA</span><span>TEST CASES</span><span>BUG REPORTING</span>
+              </div>
+              <div class="mission-links">
+                <a href="mystc-qa.html">VIEW CASE FILE ↗</a>
+                <a href="mystc-qa.html#bug-database">VIEW BUG DATABASE ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="stats" class="section section-block">
+        <div class="section-title reveal">
+          <p>PLAYER STATS // 02</p>
+          <h3>Skills & Systems</h3>
+          <span>Core abilities currently equipped.</span>
+        </div>
+
+        <div class="stats-layout">
+          <div class="stats-categories">
+            <article class="stat-panel reveal">
+              <div class="stat-icon">01</div>
+              <div>
+                <h4>Gameplay Programming</h4>
+                <p>Player controls, interactions, UI, physics, scene systems, and prototypes.</p>
+              </div>
+            </article>
+
+            <article class="stat-panel reveal delay-1">
+              <div class="stat-icon">02</div>
+              <div>
+                <h4>Programming</h4>
+                <p>C#, Java, Python, OOP, data structures, algorithms, and debugging.</p>
+              </div>
+            </article>
+
+            <article class="stat-panel reveal">
+              <div class="stat-icon">03</div>
+              <div>
+                <h4>Artificial Intelligence</h4>
+                <p>NLP, semantic similarity, recommendations, machine learning, and game AI.</p>
+              </div>
+            </article>
+
+            <article class="stat-panel reveal delay-1">
+              <div class="stat-icon">04</div>
+              <div>
+                <h4>Development Tools</h4>
+                <p>Git, GitHub, Visual Studio, Eclipse, Colab, Blender, and documentation.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="level-panel reveal delay-1">
+            <p class="micro-label">LOADOUT ANALYSIS</p>
+            <h4>Current Build</h4>
+
+            <div class="level-item">
+              <div><span>Unity</span><small>BEGINNER</small></div>
+              <div class="level-track"><i style="--fill: 35%"></i></div>
+            </div>
+
+            <div class="level-item">
+              <div><span>C#</span><small>BEGINNER</small></div>
+              <div class="level-track"><i style="--fill: 30%"></i></div>
+            </div>
+
+            <div class="level-item">
+              <div><span>Java</span><small>STRONG</small></div>
+              <div class="level-track"><i style="--fill: 86%"></i></div>
+            </div>
+
+            <div class="level-item">
+              <div><span>Python</span><small>INTERMEDIATE</small></div>
+              <div class="level-track"><i style="--fill: 70%"></i></div>
+            </div>
+
+            <div class="level-item">
+              <div><span>Git & GitHub</span><small>WORKING KNOWLEDGE</small></div>
+              <div class="level-track"><i style="--fill: 68%"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dossier" class="section dossier-section">
+        <div class="dossier-card reveal">
+          <div>
+            <p class="micro-label">PERSONNEL FILE // 03</p>
+            <h3>Download Dossier</h3>
+            <p>
+              Add your resume PDF to this folder and rename it
+              <strong>resume.pdf</strong>.
+            </p>
+          </div>
+          <a class="button primary" href="resume.pdf" download>DOWNLOAD RESUME</a>
+        </div>
+      </section>
+
+      <section id="comms" class="section section-block">
+        <div class="comms-panel reveal">
+          <div class="comms-code">CHANNEL_04 // SECURE CONNECTION</div>
+          <h3>Open Comms</h3>
+          <p>
+            I am currently looking for a game development internship where I can
+            learn, contribute, and grow as a gameplay programmer.
+          </p>
+
+          <div class="comms-links">
+            <a href="mailto:your-email@example.com"><span>EMAIL</span><b>↗</b></a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer"><span>GITHUB</span><b>↗</b></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer"><span>LINKEDIN</span><b>↗</b></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>JOORY.EXE // GAMEPLAY PROGRAMMER // 2026</p>
+      <a href="#home">RETURN TO START ↑</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

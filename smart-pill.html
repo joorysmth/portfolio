@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smart Pill Bottle IoT project case study by Joory." />
+  <title>Smart Pill Bottle | JOORY.EXE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="case-body">
+  <div class="cursor-glow"></div>
+  <div class="background-grid"></div>
+  <div class="background-noise"></div>
+  <div class="floating-orb orb-one"></div>
+  <div class="floating-orb orb-two"></div>
+
+  <header class="topbar">
+    <a href="index.html#home" class="brand">JOORY<span>.EXE</span></a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links">
+      <a href="index.html#home">HOME</a>
+      <a href="index.html#missions" class="nav-accent">MISSIONS</a>
+      <a href="index.html#stats">STATS</a>
+      <a href="index.html#dossier">DOSSIER</a>
+      <a href="index.html#comms">OPEN COMMS</a>
+    </nav>
+  </header>
+
+  <main class="case-main section">
+    <article class="case-frame reveal visible">
+      <div class="case-inner">
+        <a class="case-back" href="index.html#missions">← BACK TO MISSIONS</a>
+
+        <div class="case-grid">
+          <section>
+            <p class="case-kicker">MISSION_04 ////</p>
+
+            <div class="case-title-row">
+              <div>
+                <h1 class="case-title">SMART PILL BOTTLE</h1>
+                <p class="case-subtitle">– HEALTHCARE IoT PROJECT</p>
+              </div>
+              <span class="case-status">COMPLETE</span>
+            </div>
+
+            <p class="case-summary">
+              An IoT-based medication support system designed to help patients
+              take scheduled doses on time. The prototype monitors the pill
+              compartments and sends real-time Home Assistant notifications
+              when a dose is due or appears to have been missed.
+            </p>
+
+            <div class="case-info-grid">
+              <section class="case-panel">
+                <h2>◉ MY ROLE</h2>
+                <ul>
+                  <li>Helped design the prototype architecture and hardware integration.</li>
+                  <li>Worked with the microcontroller, sensors, buzzer, and indicator LEDs.</li>
+                  <li>Developed reminder, detection, and notification logic.</li>
+                  <li>Connected the prototype to Home Assistant for real-time alerts.</li>
+                </ul>
+              </section>
+
+              <section class="case-panel">
+                <h2>▣ TECHNOLOGIES</h2>
+                <div class="case-tech">
+                  <span>RASPBERRY PI</span>
+                  <span>ARDUINO / ESP32</span>
+                  <span>HOME ASSISTANT</span>
+                  <span>SENSORS</span>
+                  <span>WI-FI</span>
+                  <span>ELECTRONICS</span>
+                  <span>IoT</span>
+                </div>
+              </section>
+
+              <section class="case-panel">
+                <h2>⌁ KEY FEATURES</h2>
+                <ul>
+                  <li>Scheduled medication reminders.</li>
+                  <li>Light and buzzer feedback for the patient.</li>
+                  <li>Real-time notifications through Home Assistant.</li>
+                  <li>Missed-dose alerts for the patient and family.</li>
+                  <li>Physical prototype with multiple pill compartments.</li>
+                </ul>
+              </section>
+
+              <section class="case-panel">
+                <h2>◌ CHALLENGES &amp; SOLUTIONS</h2>
+                <p>
+                  <strong>Challenge:</strong> Connecting physical sensor events
+                  to reliable reminders without generating unnecessary alerts.
+                </p>
+                <p style="margin-top:10px">
+                  <strong>Solution:</strong> Tested the sensor and timing logic,
+                  combined visual and audio feedback, and used Home Assistant
+                  automation to verify notification delivery.
+                </p>
+              </section>
+            </div>
+
+            <section class="learning-row">
+              <h2>◇ WHAT I LEARNED</h2>
+              <div class="learning-items">
+                <div class="learning-item"><span><b>☼</b>IoT System Design</span></div>
+                <div class="learning-item"><span><b>↔</b>Hardware Integration</span></div>
+                <div class="learning-item"><span><b>♢</b>Real-Time Alerts</span></div>
+                <div class="learning-item"><span><b>⌂</b>Home Automation</span></div>
+                <div class="learning-item"><span><b>◎</b>Problem Solving</span></div>
+              </div>
+            </section>
+
+            <div class="case-actions">
+              <a class="button primary" href="index.html#comms">REQUEST PROJECT DETAILS</a>
+              <a class="button ghost" href="index.html#missions">OTHER MISSIONS</a>
+            </div>
+          </section>
+
+          <section class="case-visual">
+            <div class="case-id">
+              <span>CASE ID<br><strong>SPB_2024</strong></span>
+            </div>
+
+            <div class="main-photo-wrap">
+              <img id="main-project-image"
+                   src="images/smart-pill-main.png"
+                   alt="Smart Pill Bottle prototype connected to Home Assistant notifications">
+            </div>
+
+            <div class="gallery" aria-label="Smart Pill Bottle photo gallery">
+              <button class="gallery-button active"
+                      data-image="images/smart-pill-setup.png"
+                      data-alt="Full Smart Pill Bottle system setup with laptops and prototype">
+                <img src="images/smart-pill-setup.png" alt="">
+                <span>01_SYSTEM_SETUP</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/smart-pill-hardware.png"
+                      data-alt="Close-up of the Smart Pill Bottle electronics and wiring">
+                <img src="images/smart-pill-hardware.png" alt="">
+                <span>02_HARDWARE_INTEGRATION</span>
+              </button>
+
+              <button class="gallery-button"
+                      data-image="images/smart-pill-prototype.png"
+                      data-alt="Early Smart Pill Bottle breadboard prototype">
+                <img src="images/smart-pill-prototype.png" alt="">
+                <span>03_BREADBOARD_PROTOTYPE</span>
+              </button>
+            </div>
+
+            <p class="case-note">STATUS: ONLINE // GALLERY INTERACTIVE</p>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>JOORY.EXE // CASE FILE SPB_2024 // 2026</p>
+    <a href="index.html#missions">RETURN TO MISSIONS ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const mainProjectImage = document.getElementById("main-project-image");
+    const galleryButtons = document.querySelectorAll(".gallery-button");
+
+    galleryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        mainProjectImage.src = button.dataset.image;
+        mainProjectImage.alt = button.dataset.alt;
+
+        galleryButtons.forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
